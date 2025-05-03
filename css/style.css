@@ -18,6 +18,8 @@ body{
 
 #newtask{
     display:flex;
+    align-items:center;
+    justify-content:space-between;
     position: relative;
     height:50px;
     bottom:25px;
@@ -37,7 +39,13 @@ main{
     border-radius:15px;
     border:2px solid #0D0D0D;
     padding-left:10px;
+    margin:5px;
 
+}
+
+.forma{
+    display:flex;
+    flex-direction:column;
 }
 
 .submitbtn img{
@@ -129,11 +137,11 @@ hr{
 
 .task{
     display:flex;
+    flex-direction:column;
     padding:15px;
-    align-items:center;
     width:49vw;
     border:2px solid #333333;
-    height:4vw;
+    height:5vw;
     background-color:#262626;
 }
 
@@ -145,17 +153,32 @@ hr{
     border:2px solid #4EA8DE;
 }
 
+.description{
+    display:flex;
+    flex-grow:1;
+    align-items:center;
+}
 
 .task-description{
     display:flex;
-    justify-content:center;
+    flex-grow:1;
+    align-items:center;
     padding-left:15px;
     color:#F2F2F2;
     font-weight:400;
 }
 
 .urna{
-    width:15vw;
     display:flex;
     justify-content:right;
+}
+
+.tittle{
+    display:flex;
+    flex-grow:1;
+    margin-bottom:5px;
+    color:white;
+    font-size:24px;
+    justify-content:left;
+    width:49vw;
 }

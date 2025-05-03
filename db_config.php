@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "sms";
+$dbname = "tasks";
 $username= "root";
 $password = "root";
 $port = 3306;
