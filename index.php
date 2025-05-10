@@ -38,16 +38,16 @@
         </div>
     </header>
     <main>
-        <form action="" id="newtask">
+        <form action="new_task_procces.php" id="newtask" method="POST">
             <div class="forma">
-                <input id="newrequest" type="text" placeholder="type a new task here">
-                <input id="newrequest" type="text" placeholder="type a new task here">
+                <input id="newrequest" type="text" placeholder="type a new title here" name="title">
+                <input id="newrequest" type="text" placeholder="type a new description here" name="description">
             </div>
 
-            <div class="submitbtn">
+            <button class="submitbtn" type="submit">
                 <p>Add</p>
                 <img src="img/add.svg" alt="">
-            </div>
+            </button>
     </form>   
             
 

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    height:100vh;
+    background-color:black;
+    font-family: "Inter", sans-serif;
+}
+
+
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background-color:black;
+    height:20vh;
+    animation-duration:2s;
+    animation-name:header;
+}
+
+form{
+    width:40%;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+    background-color:#333333;
+    animation-duration: 2s;
+    animation-name:form;
+}
+
+.form-block input{
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    border:1px solid rgba(128, 128, 128, 0.514);
+    padding:10px;
+    width:100%;
+    font-size:28px;
+}
+
+.form-block p{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+
+input::placeholder{
+    color:grey;
+}
+
+.form-block{
+    font-size:13px;
+    width:80%;
+    margin-bottom:42px;
+    color:#4EA8DE;
+}
+
+.log_button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#4EA8DE;
+    width:15vw;
+    height:7vh;
+    font-size:32px;
+    border-radius:30px;
+    color:white;
+}
+
+.log_button:hover{
+    background-color:#8284FA;
+    color:white;
+    transition-duration:1s;
+    cursor:pointer;
+}
+
+.form-text h1{
+    font-size:64px;
+    color:#4EA8DE;
+}
+
+.form-text p{
+    font-size:28px;
+    color:#8284faa6;
+}
+
+.form-text{
+    text-align:center;
+
+}
+
+
+@keyframes form{
+    from{
+        top:300%;
+    }
+
+    to{
+        top:0%;
+    }
+
+}
+
+
+@keyframes header {
+    from{
+        bottom:2000%;
+    }
+
+    to{
+
+        bottom:0%;
+    }
+    
+}
