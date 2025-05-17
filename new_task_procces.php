@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<?php
+    require_once 'db_config.php';
 
-    <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-            print_r($_POST);
+             $title = $_POST['title'];
+            $description = $_POST['description'];
+
+           if(empty($title) || empty($description)){
+                Header("Location: index.php");
+                exit;
+
+           }
+
+           $sql = "INSERT INTO task (title, description)
+           VALUES(:title, :description)";
+           $stmt = $conn->prepare($sql);
+           $stmt->bindParam(':title', $title);
+           $stmt->bindParam(':description', $description);
+           $stmt->execute();
+           Header("Location: index.php");
+           exit;
         }
 
-        $title = $_POST['title'];
-        $description = $_POST['description'];
+       
 
 
-    ?>
+?>
     
-</body>
-</html>
